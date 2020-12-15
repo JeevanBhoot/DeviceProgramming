@@ -9,3 +9,9 @@ Microcontroller records a sequence of colours entered by the user, and then play
 2. While the colours are cycling, the user selects a colour by pressing the button. The colour that is ON at this time is recorded.
 3. The process continues until N colours have been entered (the size of the sequence N is set in the code).
 4. Once recording is completed, the recorded sequence is played back on the LEDs.
+
+Activity 2:
+Using an I2C tempearture sensor and micro-controller:
+
+1. Record a temperature value every second in an array that will contain the last minute of data (older data is replaced by new data once the array is full).
+2. If the temperature goes above a threshold value of 28 degree Celsius, the sensor triggers an interrupt that will get the LEDs on the microcontroller to flash an alarm signal, and transmit all the data available in the array to your computer by USB serial communication, so that the log may be analysed.
